@@ -1,0 +1,17 @@
+# Node dependencies
+proxy/node_modules/
+frontend/node_modules/
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+backend/.env
+proxy/.env
+frontend/.env
+
+# System files
+.DS_Store
+.env

@@ -1,0 +1,39 @@
+.info-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .info-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .info-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .info-content h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+    text-align: left; /* Consistent left alignment for headings */
+  }
+  
+  .info-content p {
+    line-height: 1.6;
+  }
+  
+  .info-image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .info-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

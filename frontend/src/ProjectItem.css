@@ -1,0 +1,49 @@
+.project-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .project-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .project-text {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .project-text h3 {
+    color: #0077cc;
+    margin-bottom: 10px;
+    text-align: left; /* Ensures heading is left aligned */
+  }
+  
+  .project-description {
+    margin-bottom: 10px;
+  }
+  
+  .project-skills,
+  .project-soft-skills {
+    margin-bottom: 5px;
+  }
+  
+  .project-image {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

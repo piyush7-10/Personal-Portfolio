@@ -1,0 +1,33 @@
+/* frontend/src/SplashScreen.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eef2f5; /* light bluish-white background */
+}
+
+.splash-text {
+  font-family: 'Dancing Script', cursive; /* Calligraphic font */
+  font-size: 128px;
+  color: #0077cc;
+}
+
+.letter {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

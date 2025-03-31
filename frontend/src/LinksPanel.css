@@ -1,0 +1,182 @@
+.links-panel {
+  background-color: var(--bumble-light);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.links-panel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.links-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bumble-dark);
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.links-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background-color: var(--bumble-yellow);
+  border-radius: 2px;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: var(--bumble-gray);
+  color: var(--bumble-dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover::before {
+  transform: translateX(100%);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.social-name {
+  font-size: 14px;
+  font-weight: 600;
+  flex: 1;
+}
+
+/* Platform-specific styles */
+.social-link.github {
+  background-color: #24292e;
+  color: white;
+}
+
+.social-link.linkedin {
+  background-color: #0077b5;
+  color: white;
+}
+
+.social-link.twitter {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.social-link.leetcode {
+  background-color: #ffa116;
+  color: white;
+}
+
+.social-link.portfolio {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.social-link.email {
+  background-color: #ea4335;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .links-panel {
+    padding: 20px;
+  }
+  
+  .social-link {
+    padding: 12px;
+  }
+  
+  .social-name {
+    font-size: 13px;
+  }
+}
+
+.links-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 150px;
+    transition: transform 0.2s;
+  }
+  
+  .link-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .link-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .link-name {
+    color: #0077cc;
+    font-weight: bold;
+    text-align: center;
+  }
+  
