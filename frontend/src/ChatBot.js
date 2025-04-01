@@ -44,6 +44,10 @@ const ChatBot = () => {
       });
 
       const data = await response.json();
+
+      if (!response.ok || !data.response) {
+        throw new Error(data.error || "Invalid response from server");
+      }
       
       // Add bot response
       setMessages(prev => [...prev, { type: 'bot', content: data.response }]);
