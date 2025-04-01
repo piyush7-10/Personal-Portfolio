@@ -17,6 +17,7 @@ CORS(app)
 
 # Initialize OpenAI client
 api_key = os.getenv("OPENAI_API_KEY")
+print("🔑 API key loaded:", bool(api_key))
 if not api_key:
     raise ValueError("OpenAI API key is required")
 
@@ -116,6 +117,7 @@ def chat():
             return jsonify({"response": bot_response})
             
         except Exception as e:
+            logger.error(f"❌ OpenAI API error: {str(e)}")
             return jsonify({"error": "Error communicating with OpenAI API. Please try again later."}), 503
             
     except Exception as e:
