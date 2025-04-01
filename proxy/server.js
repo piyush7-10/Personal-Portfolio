@@ -20,7 +20,7 @@ app.use(express.json());
 // });
 app.post("/api/chat", async (req, res) => {
   try {
-    const response = await axios.post("https://portfolio-chatbot.onrender.com/chat", req.body);
+    const response = await axios.post("https://personal-portfolio-proxy.onrender.com", req.body);
     res.json(response.data);
   } catch (error) {
     console.error("Error in proxy:", error);
