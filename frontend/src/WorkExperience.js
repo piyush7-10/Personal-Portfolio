@@ -22,7 +22,7 @@ const WorkExperience = () => {
     {
       id: 1,
       company: "Samsung Research Institute",
-      logo: "/images/Samsung_logo.gif", // You'll need to add these logo images
+      logo: "/images/samsung_logo.gif", // You'll need to add these logo images
       role: "SoftwareEngineer",
       period: "June 2022 - August 2023",
       location: "Noida, India",
