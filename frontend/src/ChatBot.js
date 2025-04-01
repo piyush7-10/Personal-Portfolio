@@ -35,7 +35,7 @@ const ChatBot = () => {
 
     try {
       // Replace with your actual backend API endpoint
-      const response = await fetch('https://portfolio-proxy.onrender.com/api/chat', {
+      const response = await fetch('https://personal-portfolio-proxy.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
