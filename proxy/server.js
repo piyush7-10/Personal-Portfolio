@@ -18,12 +18,23 @@ app.use(express.json());
 //     res.status(500).json({ error: "Error connecting to chatbot API" });
 //   }
 // });
+// app.post("/api/chat", async (req, res) => {
+//   try {
+//     const response = await axios.post("https://personal-portfolio-yqy1.onrender.com", req.body);
+//     res.json(response.data);
+//   } catch (error) {
+//     console.error("Error in proxy:", error);
+//     res.status(500).json({ error: "Error connecting to chatbot API" });
+//   }
+// });
 app.post("/api/chat", async (req, res) => {
   try {
-    const response = await axios.post("https://personal-portfolio-yqy1.onrender.com", req.body);
+    console.log("📨 Proxy received:", req.body);
+    const response = await axios.post("https://personal-portfolio-yqy1.onrender.com/chat", req.body);
+    console.log("✅ Got response from backend:", response.data);
     res.json(response.data);
   } catch (error) {
-    console.error("Error in proxy:", error);
+    console.error("❌ Error in proxy:", error?.response?.data || error.message);
     res.status(500).json({ error: "Error connecting to chatbot API" });
   }
 });
