@@ -121,7 +121,7 @@ function App() {
                 <h2 className="section-title">Chat with My AI Assistant</h2>
                 <p className="chat-description">
                   Have questions about my experience, skills, projects or will I be a good fit ? My AI assistant is here to help!
-                  Feel free to ask anything, and get instant responses about my background and expertise.
+                  Feel free to ask anything, and get instant responses about my background and expertise (First response might take time, servers are 😴).
                 </p>
                 <div className="chat-wrapper">
                   <ChatBot />
