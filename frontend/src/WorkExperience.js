@@ -32,21 +32,21 @@ const WorkExperience = () => {
         "Developed AI-powered memory leak detection system for Smart TVs using Computer Vision and Reinforcement Learning (DQN, PPO, Rainbow), achieving 86% accuracy and resolving critical performance issues",
         "Led development and launch of Samsung's premium gaming monitors, resolving critical bugs and ensuring successful product release"
       ]
-    },
-    {
-      id: 3,
-      company: "AMIE",
-      logo: "/images/Amie.jpeg",
-      role: "Software Engineer Intern",
-      period: "June 2024 - Decemeber 2025",
-      location: "Boston, USA",
-      description: "Built a full-stack web app using the MERN stack and integrated AI-powered simulations with a fine-tuned LLM and sentiment analysis for sales and soft skills training.",
-      achievements: [
-        "Built a scalable web application using the MERN stack (MongoDB, Express.js, React, Node.js) with JWT authentication, Redux for state management, and Tailwind CSS for UI optimization.",
-        "Fine-tuned a Large Language Model (LLM) using PyTorch and Hugging Face Transformers, incorporating NLTK and Vader for sentiment analysis to quantify user performance in sales and soft skills training.",
-        "Developed real-time, AI-driven role-playing scenarios using LangChain, WebSockets for live interactions, and TensorFlow.js for in-browser AI processing, enhancing user engagement."
-      ]
     }
+    // ,{
+    //   id: 3,
+    //   company: "AMIE",
+    //   logo: "/images/Amie.jpeg",
+    //   role: "Software Engineer Intern",
+    //   period: "June 2024 - Decemeber 2025",
+    //   location: "Boston, USA",
+    //   description: "Built a full-stack web app using the MERN stack and integrated AI-powered simulations with a fine-tuned LLM and sentiment analysis for sales and soft skills training.",
+    //   achievements: [
+    //     "Built a scalable web application using the MERN stack (MongoDB, Express.js, React, Node.js) with JWT authentication, Redux for state management, and Tailwind CSS for UI optimization.",
+    //     "Fine-tuned a Large Language Model (LLM) using PyTorch and Hugging Face Transformers, incorporating NLTK and Vader for sentiment analysis to quantify user performance in sales and soft skills training.",
+    //     "Developed real-time, AI-driven role-playing scenarios using LangChain, WebSockets for live interactions, and TensorFlow.js for in-browser AI processing, enhancing user engagement."
+    //   ]
+    // }
   ];
 
   const toggleCard = (id) => {
